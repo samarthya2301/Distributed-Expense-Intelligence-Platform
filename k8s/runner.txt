@@ -1,0 +1,5 @@
+# Secrets Creation - Secrets valid till Cluster is valid
+kubectl create secret generic app-secrets --from-env-file=.env  
+
+# Port Forwarding - Local Testing
+kubectl port-forward pod/<pod-name> 3001:8080
